@@ -1,3 +1,5 @@
+package exercise1;
+
 public class Patient {
     private String patient_id;
     private String first_name;
@@ -75,5 +77,9 @@ public class Patient {
         return postal_code;
     }
 
+    public String GetPatientInfo()
+    {
+        return ("exercise1.Patient ID : " + this.patient_id + " exercise1.Patient First name: " + this.first_name + " exercise1.Patient Last name: " + this.last_name + " exercise1.Patient Address: " + this.address + " exercise1.Patient City: " + this.city + " exercise1.Patient Province: " + this.province + " exercise1.Patient Postal code: " + this.postal_code);
+    }
 
 }

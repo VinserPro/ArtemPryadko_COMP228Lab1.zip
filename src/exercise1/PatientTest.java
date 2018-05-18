@@ -1,3 +1,5 @@
+package exercise1;
+
 import java.util.Scanner;
 
 public class PatientTest {
@@ -46,13 +48,15 @@ public class PatientTest {
         System.out.println();
 
         //Display the patient information
-        System.out.printf("The Patient ID number is: %s%n", newPatient.getPatient_id());
-        System.out.printf("The Patient first name is: %s%n", newPatient.getFirst_name());
-        System.out.printf("The Patient last name is: %s%n", newPatient.getLast_name());
-        System.out.printf("The Patient address is: %s%n", newPatient.getAddress());
-        System.out.printf("The Patient city is: %s%n", newPatient.getCity());
-        System.out.printf("The Patient province is: %s%n", newPatient.getProvince());
-        System.out.printf("The Patient postal code is: %s%n", newPatient.getPostal_code());
+        System.out.printf("The exercise1.Patient ID number is: %s%n", newPatient.getPatient_id());
+        System.out.printf("The exercise1.Patient first name is: %s%n", newPatient.getFirst_name());
+        System.out.printf("The exercise1.Patient last name is: %s%n", newPatient.getLast_name());
+        System.out.printf("The exercise1.Patient address is: %s%n", newPatient.getAddress());
+        System.out.printf("The exercise1.Patient city is: %s%n", newPatient.getCity());
+        System.out.printf("The exercise1.Patient province is: %s%n", newPatient.getProvince());
+        System.out.printf("The exercise1.Patient postal code is: %s%n", newPatient.getPostal_code());
+
+
 
 
 
