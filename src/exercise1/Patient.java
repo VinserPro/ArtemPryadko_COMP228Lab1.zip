@@ -10,16 +10,15 @@ public class Patient {
     private String postal_code;
 
    //Declare a Constructor
-    public Patient(String patient_id)
+    public Patient(String patient_id, String first_name, String last_name, String address, String city, String province, String postal_code)
     {
-        this.patient_id = patient_id;/*
+        this.patient_id = patient_id;
         this.first_name = first_name;
-
         this.last_name = last_name;
         this.address = address;
         this.city = city;
         this.province = province;
-        this.postal_code = postal_code;*/
+        this.postal_code = postal_code;
     }
 
     //Allow patient to set his/her information
@@ -27,7 +26,6 @@ public class Patient {
     {
         this.patient_id = patient_id;
     }
-
     public void setFirst_name(String first_name)
     {
         this.first_name = first_name;
@@ -77,6 +75,7 @@ public class Patient {
         return postal_code;
     }
 
+    //Return all information method
     public String GetPatientInfo()
     {
         return ("exercise1.Patient ID : " + this.patient_id + " exercise1.Patient First name: " + this.first_name + " exercise1.Patient Last name: " + this.last_name + " exercise1.Patient Address: " + this.address + " exercise1.Patient City: " + this.city + " exercise1.Patient Province: " + this.province + " exercise1.Patient Postal code: " + this.postal_code);

@@ -1,51 +1,35 @@
 package exercise1;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class PatientTest {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
-        Patient newPatient = new Patient("00000001");
+        Patient newPatient = new Patient("300967079", "Artem", "Pryadko","63 Lansbury Dr", "Toronto", "Ontario", "31MJ3J");
 
         //Display the default account info
         System.out.printf("Initial Id is: %s%n%n", newPatient.getPatient_id());
+        System.out.printf("Initial First_name is: %s%n%n", newPatient.getFirst_name());
+        System.out.printf("Initial Last_name is: %s%n%n", newPatient.getLast_name());
+        System.out.printf("Initial Address is: %s%n%n", newPatient.getAddress());
+        System.out.printf("Initial City is: %s%n%n", newPatient.getCity());
+        System.out.printf("Initial Province is: %s%n%n", newPatient.getProvince());
+        System.out.printf("Initial Postal_code is: %s%n%n", newPatient.getPostal_code());
+
 
         //Prompt the patient for an information
-        System.out.printf("Please enter patient id: ");
-        String patient_id = input.nextLine();
-        newPatient.setPatient_id(patient_id);
-        System.out.println();
+        String patient_id  = JOptionPane.showInputDialog("What is patient Id?");
+        String first_name  = JOptionPane.showInputDialog("What is patient First_name?");
+        String last_name  = JOptionPane.showInputDialog("What is patient Last_name?");
+        String Address  = JOptionPane.showInputDialog("What is patient Address?");
+        String City  = JOptionPane.showInputDialog("What is patient City?");
+        String Province  = JOptionPane.showInputDialog("What is patient Province?");
+        String Postal_code  = JOptionPane.showInputDialog("What is patient Postal_code?");
 
-        System.out.printf("Please enter the patient first name: ");
-        String first_name = input.nextLine();
-        newPatient.setFirst_name(first_name);
-        System.out.println();
+        //Display the patient information
+        String message = String.format("Infomration about patient, patient ID: %s%n First Name:%s | Last Name:%s | Address:%s | City:%s | Province:%s | Postal code:%s " , patient_id, first_name, last_name, Address, City, Province, Postal_code);
 
-        System.out.printf("Please enter patient last name: ");
-        String last_name = input.nextLine();
-        newPatient.setLast_name(last_name);
-        System.out.println();
-
-        System.out.printf("Please enter the patient address: ");
-        String address = input.nextLine();
-        newPatient.setAddress(address);
-        System.out.println();
-
-        System.out.printf("Please enter the patient city: ");
-        String city = input.nextLine();
-        newPatient.setCity(city);
-        System.out.println();
-
-        System.out.printf("Please enter the patient province: ");
-        String province = input.nextLine();
-        newPatient.setProvince(province);
-        System.out.println();
-
-        System.out.printf("Please enter the patient postal code: ");
-        String postal_code = input.nextLine();
-        newPatient.setPostal_code(postal_code);
-        System.out.println();
+        JOptionPane.showMessageDialog(null, message);
 
         //Display the patient information
         System.out.printf("The exercise1.Patient ID number is: %s%n", newPatient.getPatient_id());

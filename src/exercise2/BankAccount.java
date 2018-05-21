@@ -72,5 +72,11 @@ public class BankAccount {
     {
         return balance;
     }
+
+    //Return all information method
+    public String GetPatientInfo()
+    {
+        return ("Account number : " + this.accountNumber + " Owner Name " + this.ownersName + " Balance: " + this.balance + " New Balance " + this.balanceNew + " Interest " + this.interest);
+    }
 }
 

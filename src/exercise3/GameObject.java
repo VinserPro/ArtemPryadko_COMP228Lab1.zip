@@ -18,6 +18,12 @@ public class GameObject {
 
     }
 
+    //Return all information method
+    public String GetPatientInfo()
+    {
+        return ("Object center : " + this.center + " Object velocity " + this.velocity + " Object state: " + this.state + " Object rotation " + this.rotation);
+    }
+
     //Allow to user to get information
 
     public double getCenter()
