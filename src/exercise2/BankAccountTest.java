@@ -23,7 +23,7 @@ public class BankAccountTest {
         String balanceNew  = JOptionPane.showInputDialog("What is patient Address?");
         String interest  = JOptionPane.showInputDialog("What is patient City?");*/
 
-
+        //Text Message with Prompt USer about information
         JTextField accountNumber = new JTextField(5);
         JTextField OwnerName = new JTextField(5);
         JTextField balance = new JTextField(5);
@@ -42,6 +42,7 @@ public class BankAccountTest {
         String message = String.format("Information about Client %n Account Number:%s | Client Name:%s " , accountNumber, OwnerName);
         JOptionPane.showMessageDialog(null, message);*/
 
+        //Printing information
         int result = JOptionPane.showConfirmDialog(null, myPanel,
                 "Please Enter Your Information", JOptionPane.OK_CANCEL_OPTION);
         if (result == JOptionPane.OK_OPTION) {

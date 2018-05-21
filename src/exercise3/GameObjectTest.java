@@ -32,7 +32,7 @@ public class GameObjectTest {
         JTextField State = new JTextField(5);
         JTextField Rotation = new JTextField(5);
 
-
+        //Text Message with Prompt USer about information
         JPanel myPanel = new JPanel();
         myPanel.add(new JLabel("New Center:"));
         myPanel.add(Center);
@@ -46,6 +46,7 @@ public class GameObjectTest {
         myPanel.add(new JLabel("New Rotation:"));
         myPanel.add(Rotation);
 
+        //Printing information
         int result = JOptionPane.showConfirmDialog(null, myPanel,
                 "Please Enter New Information Abount Onject", JOptionPane.OK_CANCEL_OPTION);
         if (result == JOptionPane.OK_OPTION) {
